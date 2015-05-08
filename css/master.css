@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* GLOBAL SELECTORS ===================================================================== */
+
+
+img {
+	max-width:100%;
+}
+
+
+h1 {
+	display:inline;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-size: 3.75em;
+}
+
+h2 {
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size:3.5em;
+}
+
+p, li, a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+	min-height:100%;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+#wrapper {
+	width:90%;
+
+	background	
+}
+
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+/*  GRID OF FIVE   ============================================================================= */
+
+	
+.span_5_of_5 {
+	width: 100%;
+}
+
+.span_4_of_5 {
+  	width: 79.68%; 
+}
+
+.span_3_of_5 {
+  	width: 59.36%; 
+}
+
+.span_2_of_5 {
+  	width: 39.04%;
+}
+
+.span_1_of_5 {
+  	width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_5_of_5 {
+		width: 100%; 
+	}
+	.span_4_of_5 {
+		width: 100%; 
+	}
+	.span_3_of_5 {
+		width: 100%; 
+	}
+	.span_2_of_5 {
+		width: 100%; 
+	}
+	.span_1_of_5 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+
+/* SIDEBAR ================================================================================== */
+
+.active {
+	color: rgb(13,184,7);
+	}
+
+#side-bar {
+	height:100%;
+	position:fixed;
+}
+#main {
+	margin-left:24%;
+}
+
+nav a {
+	display:block;
+}
+
+/* MAIN CONTENT ================================================================================== */
+/* HEADER ================================================================================== */
+
+
+
+/* BODY ============================================================================*/
+
+.project-thumb{
+	display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  height:auto;
+  width:auto;
+}
+.project-thumb:hover{
+	transform: scale(1.05);
+}
+
+
+
+/* PROJECTS ================================================================================== */
+
+.main-project-container {
+	margin-top: 6em;
+}
+
+.project-image {
+	margin-bottom:25px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER ================================================================================== */
+
+footer {
+	height:200px;
+	background-color: gray;
+}
