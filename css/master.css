@@ -37,7 +37,6 @@ html, body {
 #wrapper {
 	width:90%;
 
-	background	
 }
 
 
@@ -182,7 +181,7 @@ nav a {
 	display:block;
 }
 
-/* MAIN CONTENT ================================================================================== */
+/* HOMEPAGE ================================================================================== */
 /* HEADER ================================================================================== */
 
 
@@ -199,8 +198,20 @@ nav a {
   height:auto;
   width:auto;
 }
+
 .project-thumb:hover{
 	transform: scale(1.05);
+}
+
+.project-thumb span {
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	color: white;
+	font-size:1.1em;
+	padding:3px 0 3px 0;
 }
 
 
@@ -212,9 +223,20 @@ nav a {
 }
 
 .project-image {
-	margin-bottom:25px;
+	margin-bottom:4.5em;
 }
 
+.project-seperator {
+	content:"";
+	border:1px solid rgba(0,0,0,0.5);
+	margin-bottom:4.5em;
+	width:100%;
+	max-width: 1000px;
+	display:inline-block;
+	position:relative;
+	left:0;
+	top:0;
+}
 
 
 

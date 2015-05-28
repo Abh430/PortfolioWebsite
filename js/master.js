@@ -37,6 +37,10 @@ $(document).ready(function() {
   		preload: [1,3],
   		});
 	});
+
+  // Project image dividers =====================================
+
+  $('.project-image').not(':last-of-type').after('<hr class="project-seperator">');
 	
 	
 });
