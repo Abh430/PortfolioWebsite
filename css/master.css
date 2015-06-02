@@ -238,8 +238,16 @@ nav a {
 	top:0;
 }
 
+.cp_embed_iframe, #flickr-stream {
+	max-width: 1000px;
+}
 
-
+#flickr-stream {
+	position: relative; 
+	padding-bottom: 65%; 
+	height: 0; 
+	overflow: hidden;
+}
 
 
 
