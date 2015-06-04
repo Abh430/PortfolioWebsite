@@ -1,10 +1,52 @@
 @charset "UTF-8";
+/* MOBILE FIRST ==================================================== */
+
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	.span_5_of_5 {
+		width: 100%; 
+	}
+	.span_4_of_5 {
+		width: 100%; 
+	}
+	.span_3_of_5 {
+		width: 100%; 
+	}
+	.span_2_of_5 {
+		width: 100%; 
+	}
+	.span_1_of_5 {
+		width: 100%; 
+	}
+
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+
 
 /* GLOBAL SELECTORS ===================================================================== */
 
+* {
+	box-sizing:border-box;
+}
 
 img {
 	max-width:100%;
+}
+
+div {
+	display:block;
 }
 
 
@@ -21,6 +63,10 @@ h2 {
 	font-size:3.5em;
 }
 
+li {
+	list-style: none;
+}
+
 p, li, a {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -30,13 +76,15 @@ html, body {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
+	width:100%;
 
 }
 
 
 #wrapper {
-	width:90%;
-
+	width:100%;
+	padding:5px;
+	margin:0 auto;
 }
 
 
@@ -74,138 +122,10 @@ html, body {
 .col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
 
 
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-/*  GRID OF FIVE   ============================================================================= */
-
-	
-.span_5_of_5 {
-	width: 100%;
-}
-
-.span_4_of_5 {
-  	width: 79.68%; 
-}
-
-.span_3_of_5 {
-  	width: 59.36%; 
-}
-
-.span_2_of_5 {
-  	width: 39.04%;
-}
-
-.span_1_of_5 {
-  	width: 18.72%;
-}
-
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_5_of_5 {
-		width: 100%; 
-	}
-	.span_4_of_5 {
-		width: 100%; 
-	}
-	.span_3_of_5 {
-		width: 100%; 
-	}
-	.span_2_of_5 {
-		width: 100%; 
-	}
-	.span_1_of_5 {
-		width: 100%; 
-	}
-}
-
-/*  GRID OF FOUR   ============================================================================= */
-
-	
-.span_4_of_4 {
-	width: 100%; 
-}
-
-.span_3_of_4 {
-	width: 74.6%; 
-}
-
-.span_2_of_4 {
-	width: 49.2%; 
-}
-
-.span_1_of_4 {
-	width: 23.8%; 
-}
-
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_4_of_4 {
-		width: 100%; 
-	}
-	.span_3_of_4 {
-		width: 100%; 
-	}
-	.span_2_of_4 {
-		width: 100%; 
-	}
-	.span_1_of_4 {
-		width: 100%; 
-	}
-}
-
 /* SIDEBAR ================================================================================== */
 
-#side-bar {
-	height:100%;
-	position:fixed;
-	border-right:1px solid gray;
-}
-
-#side-bar-logo img{
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-}
-
-.nav-header a{
-	font-size:16px;
-	font-weight:bold;
-}
-
-.nav-projectlist a{
-	font-size:14px;
-}
-
-
-nav li {
-	list-style: none;
-}
-
-.active {
-	color: rgb(13,184,7);
-	}
-
-nav a {
-	color:black;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: rgb(110, 110, 110);
-}
-
-nav a:active {
-	color: rgb(110, 110, 110);
+#navigation {
+	width:100%;
 }
 
 /* HOMEPAGE ================================================================================== */
@@ -214,8 +134,9 @@ nav a:active {
 
 
 /* BODY ============================================================================*/
+
 #main {
-	margin-left:24%;
+	width: 100%;
 }
 
 .project-thumb{
@@ -285,6 +206,123 @@ nav a:active {
 /* FOOTER ================================================================================== */
 
 footer {
-	height:200px;
+	position:relative;
+	bottom:0;
+	width:100%;
+	height:auto;
 	background-color: gray;
+	padding:25px;
+}
+
+footer ul {
+	padding-left:0;
+}
+
+footer li {
+	display: inline;
+
+}
+
+
+/* LARGE SCREEN SIZES ===================================================================== */
+
+@media only screen and (min-width: 480px) {
+	/* GLOBAL SELECTORS ===================================================================== */
+	#wrapper {
+		width:90%;
+		padding:0;
+	}
+
+	/*  GRID OF FIVE   ============================================================================= */
+	
+	.span_5_of_5 {
+		width: 100%;
+	}
+
+	.span_4_of_5 {
+	  	width: 79.68%; 
+	}
+
+	.span_3_of_5 {
+	  	width: 59.36%; 
+	}
+
+	.span_2_of_5 {
+	  	width: 39.04%;
+	}
+
+	.span_1_of_5 {
+	  	width: 18.72%;
+	}
+
+
+
+	/*  GRID OF FOUR   ============================================================================= */
+
+	.span_4_of_4 {
+		width: 100%; 
+	}
+
+	.span_3_of_4 {
+		width: 74.6%; 
+	}
+
+	.span_2_of_4 {
+		width: 49.2%; 
+	}
+
+	.span_1_of_4 {
+		width: 23.8%; 
+	}
+
+	/* SIDE BAR ================================================================== */
+
+	#navigation{
+	height:100%;
+	position:fixed;
+	border-right:1px solid gray;
+	}
+
+	#side-bar-logo img{
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+	}
+
+	.nav-header a{
+		font-size:16px;
+		font-weight:bold;
+	}
+
+	.nav-projectlist {
+		padding-left:20px;
+	}
+
+	.nav-projectlist a{
+		font-size:14px;
+	}
+
+
+	.active {
+		color: rgb(13,184,7);
+		}
+
+	nav a {
+		color:black;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: rgb(110, 110, 110);
+	}
+
+	nav a:active {
+		color: rgb(110, 110, 110);
+	}
+
+/* BODY ============================================================================*/
+
+	#main {
+		margin-left:24%;
+	}
 }
