@@ -114,12 +114,7 @@ html, body {
 
 /*  GRID COLUMN SETUP   ==================================================================== */
 
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
+
 
 
 /* SIDEBAR ================================================================================== */
@@ -140,14 +135,20 @@ html, body {
 }
 
 .project-thumb{
-	display: inline-block;
+	display: block;
   transition-duration: 0.3s;
   transition-property: transform;
   -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
-  height:auto;
+  height:100%;
   width:auto;
+
+}
+
+.project-thumb img{
+	display: block;
+	  margin: 10px auto;
 }
 
 .project-thumb:hover{
@@ -156,13 +157,17 @@ html, body {
 
 .project-thumb span {
 	position:absolute;
-	bottom:5px;
+	display:block;
+	bottom:10px;
+	left:auto;
 	width:100%;
+	max-width:300px;
 	background: rgba(0,0,0,0.5);
 	text-align: center;
 	color: white;
 	font-size:1.1em;
 	padding:3px 0 3px 0;
+	margin:0 auto;
 }
 
 
@@ -234,6 +239,14 @@ footer li {
 	}
 
 	/*  GRID OF FIVE   ============================================================================= */
+
+	.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
+
 	
 	.span_5_of_5 {
 		width: 100%;
