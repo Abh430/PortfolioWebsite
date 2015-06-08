@@ -1,9 +1,32 @@
 @charset "UTF-8";
 /* MOBILE FIRST ==================================================== */
 
+	.section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+
 	.col { 
 		margin: 1% 0 1% 0%;
+		display: block;
+		float:left;
 	}
+
+	.group:before,
+	.group:after {
+		content:"";
+		display:table;
+	}
+	.group:after {
+		clear:both;
+	}
+	.group {
+	    zoom:1; /* For IE 6/7 */
+	}
+
+	
+	.col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
 
 	.span_5_of_5 {
 		width: 100%; 
@@ -54,13 +77,13 @@ h1 {
 	display:inline;
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
-	font-size: 3.75em;
+	font-size: 3.25em;
 }
 
 h2 {
 	font-family: 'Noto Serif', serif;
 	font-weight: 400;
-	font-size:3.5em;
+	font-size:2.75em;
 }
 
 li {
@@ -87,41 +110,18 @@ html, body {
 	margin:0 auto;
 }
 
-
-
-/*  SECTIONS  ============================================================================= */
-
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  GROUPING  ============================================================================= */
-
-
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-/*  GRID COLUMN SETUP   ==================================================================== */
-
-
-
-
 /* SIDEBAR ================================================================================== */
 
-#navigation {
-	width:100%;
-}
+	#side-bar-logo img{
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+	}
+
+	#desktop-nav {
+		display:none;
+	}
+
 
 /* HOMEPAGE ================================================================================== */
 /* HEADER ================================================================================== */
@@ -130,9 +130,6 @@ html, body {
 
 /* BODY ============================================================================*/
 
-#main {
-	width: 100%;
-}
 
 .project-thumb{
 	display: block;
@@ -142,24 +139,22 @@ html, body {
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   height:100%;
-  width:auto;
+  width:100%;
 
 }
 
-.project-thumb img{
-	display: block;
-	  margin: 10px auto;
-}
+
 
 .project-thumb:hover{
 	transform: scale(1.05);
 }
 
 .project-thumb span {
-	position:absolute;
-	display:block;
-	bottom:10px;
-	left:auto;
+	position:relative;
+	display:inline-block;
+	bottom:34px;
+	left:0;
+	right:0;
 	width:100%;
 	max-width:300px;
 	background: rgba(0,0,0,0.5);
@@ -240,14 +235,10 @@ footer li {
 
 	/*  GRID OF FIVE   ============================================================================= */
 
-	.col {
-	display: block;
-	float:left;
+	.col{
 	margin: 1% 0 1% 1.6%;
-}
-.col:first-child, .thumb-grid .col:nth-child(5n) { margin-left: 0; }
+	}
 
-	
 	.span_5_of_5 {
 		width: 100%;
 	}
@@ -292,15 +283,11 @@ footer li {
 
 	#navigation{
 	height:100%;
+	width: 18.72%;
 	position:fixed;
 	border-right:1px solid gray;
 	}
 
-	#side-bar-logo img{
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-	}
 
 	.nav-header a{
 		font-size:16px;
