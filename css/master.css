@@ -148,10 +148,28 @@ html, body {
 		color:white;
 		text-decoration: none;
 		background:black;
+		padding:10px;
 	}
 
 	#mobile-nav-projects {
 		display:none;
+		width:100%;
+		padding-left:0;
+		position:absolute;
+		left:0;
+		right:0;
+		top:42px;
+
+	}
+
+	#mobile-nav-projects li {
+		width:100%;
+		float:none;		
+	}
+
+	#mobile-nav-projects a {
+		width:100%;
+		float:none;		
 	}
 
 
@@ -165,16 +183,17 @@ html, body {
 
 .project-thumb{
 	display: block;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  -webkit-tap-highlight-color: transparent;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  height:100%;
-  width:100%;
-  max-width: 300px;
-  max-height: 300px;
-  margin:0 auto;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	height:100%;
+	width:100%;
+	max-width: 300px;
+	max-height: 300px;
+	margin:0 auto;
+	text-decoration: none;
 }
 
 .project-thumb:first-child {

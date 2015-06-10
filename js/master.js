@@ -23,14 +23,25 @@ $(document).ready(function() {
 	
 // scroll animations ======================================
 
-	$('.nav-header a').click(function() {
+	$('nav a').not('#mobile-nav-projects-button').click(function() {
 		var anchor = $(this);
 		$('body, html').stop().animate({scrollTop: $(anchor.attr('href')).offset().top}, 1200, 'easeInOutExpo');
 		return false;
 	});
+
+// Project image dividers =====================================
+
+$('#mobile-nav-projects-button').click(function(e){
+  $('#mobile-nav-projects').slideToggle();
+  e.stopPropagation();
+
+  $(document).click(function(){
+    $('#mobile-nav-projects').slideUp();
+  });
+});
 	
 
-  // Project image dividers =====================================
+// Project image dividers =====================================
 
   $('.project-image').not(':last-of-type').after('<hr class="project-seperator">');
 	
