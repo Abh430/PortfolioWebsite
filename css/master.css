@@ -290,7 +290,7 @@ footer li {
 @media only screen and (min-width: 480px) {
 	/* GLOBAL SELECTORS ===================================================================== */
 	#wrapper {
-		width:90%;
+		width:100%;
 		padding:0;
 	}
 
@@ -391,6 +391,6 @@ footer li {
 /* BODY ============================================================================*/
 
 	#main {
-		margin-left:24%;
+		margin-left:20%;
 	}
 }

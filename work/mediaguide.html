@@ -32,20 +32,22 @@
 
 <body>
 	<div id="wrapper" class="section group">
-			<div class="col span_1_of_5" id="side-bar">
+			<div class="col span_1_of_5" id="navigation">
 				
 					<!-- side logo -->
 
-					<div id="side-bar_logo">
+					<div id="side-bar-logo">
 						<a href="../index.html"><img src="../img/ahunter-logo-web.jpg"></a>
-					</div><!-- side nav -->
+					</div>
+					<!-- side nav -->
 
-					<nav id="side-bar_nav">
-						<ul>
+					<nav id="side-bar-nav">
+						<!-- desktop nav -->
+						<ul id="desktop-nav">
 							<li class="nav-header">
-								<a href="../index.html#webdesign">Web Design &amp; Development</a>
+								<a href="#webdesign">Web Design &amp; Development</a>
 							</li>
-								<ul>
+								<ul class="nav-projectlist">
 									<li>
 										<a href="megachaga.html">Megachaga</a>
 									</li>
@@ -63,9 +65,9 @@
 									</li>
 								</ul>
 							<li class="nav-header">
-								<a href="../index.html#printdesign">Print Design</a>
+								<a href="#printdesign">Print Design</a>
 							</li>
-								<ul>
+								<ul  class="nav-projectlist">
 									<li>
 										<a href="advertising.html">Advertising</a>
 									</li>
@@ -82,6 +84,18 @@
 										<a href="architecture.html">Architecture Magazine</a>
 									</li>
 								</ul>
+							<li class="nav-header">
+								<a href="#personalwork">Personal Work</a>
+							</li>
+								<ul class="nav-projectlist"> 
+									<li>
+										<a href="photography.html">Photography</a>
+									</li>
+									<li>
+										<a href="bookdesign.html">Book Design</a>
+									</li>
+									
+								</ul>
 
 							<li>
 								<a href="resume.html">Resume</a>
@@ -91,6 +105,60 @@
 								<a href="http://blog.andrewhdesign.com/">Blog</a>
 							</li>
 						</ul>
+	
+						<!-- mobile nav -->
+						<ul id="mobile-nav">
+							<li>
+								<a href="#webdesign">Web</a>
+							</li>
+							<li>
+								<a href="#printdesign">Print</a>
+							</li>
+							<li>
+								<a href="#personalwork">Personal</a>
+							</li>
+							<li><a href="#" id="mobile-nav-projects-button">Projects</a>
+								<ul id="mobile-nav-projects"> 
+									<li>
+										<a href="work/megachaga.html">Megachaga</a>
+									</li>
+									<li>
+										<a href="work/overcharge.html">Overcharge Recover</a>
+									</li>
+									<li>
+										<a href="work/tea4support.html">Tea 4 Support</a>
+									</li>
+									<li>
+										<a href="work/weightapp.html">Lose It!</a>
+									</li>
+									<li>
+										<a href="work/heatmap.html">Heatseek NYC</a>
+									</li>
+									<li>
+										<a href="work/advertising.html">Advertising</a>
+									</li>
+									<li>
+										<a href="work/bookdesign.html">Book Design</a>
+									</li>
+									<li>
+										<a href="work/logodesign.html">Logo Design</a>
+									</li>
+									<li>
+										<a href="work/mediaguide.html">Union Media Guide</a>
+									</li>
+									<li>
+										<a href="work/architecture.html">Architecture Magazine</a>
+									</li>
+									<li>
+										<a href="work/photography.html">Photography</a>
+									</li>
+									<li>
+										<a href="work/bookdesign.html">Book Design</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
 					</nav>					
 			</div>
 
@@ -125,17 +193,28 @@
 	</div>
 
 	<footer>
-						<div class="col span_1_of_4 main-header_icon"><img src=
-						"http://placehold.it/75x75"></div>
-
-						<div class="col span_1_of_4 main-header_icon"><img src=
-						"http://placehold.it/75x75"></div>
-
-						<div class="col span_1_of_4 main-header_icon"><img src=
-						"http://placehold.it/75x75"></div>
-
-						<div class="col span_1_of_4 main-header_icon"><img src=
-						"http://placehold.it/75x75"></div>				
+		<ul>
+			<li>
+				<a href="#">
+					<img src="http://placehold.it/75x75" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="http://placehold.it/75x75" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="http://placehold.it/75x75" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="http://placehold.it/75x75" alt="">
+				</a>
+			</li>
+		</ul>
 	</footer>
 </body>
 </html>
